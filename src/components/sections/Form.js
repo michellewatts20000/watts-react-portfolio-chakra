@@ -16,7 +16,6 @@ export default function JoinOurTeam() {
   
     <Box>
       <Center>
-      
         <Stack
           bg={'gray.50'}
           rounded={'xl'}
@@ -82,7 +81,7 @@ export default function JoinOurTeam() {
               Submit
             </Button>
           </Box>
-          form
+    
         </Stack>
     </Center>
       

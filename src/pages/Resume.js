@@ -1,6 +1,6 @@
 import React from "react";
 // import Project from "../components/sections/Project";
-import LandingLayout from "../components/layouts/LandingLayout";
+import MainPage from "../components/layouts/MainPage";
 import {
   Box,
  Text
@@ -8,8 +8,8 @@ import {
 
 export default function Portfolio() {
   return (
-    <LandingLayout>
+    <MainPage>
 <Box><Text>Your resume</Text></Box>
-    </LandingLayout>
+    </MainPage>
   );
 }

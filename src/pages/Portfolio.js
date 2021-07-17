@@ -1,11 +1,11 @@
 import React from "react";
 import Project from "../components/sections/Project";
-import LandingLayout from "../components/layouts/LandingLayout";
+import MainPage from "../components/layouts/MainPage";
 
 export default function Portfolio() {
   return (
-    <LandingLayout>
+    <MainPage>
  <Project/>
-    </LandingLayout>
+    </MainPage>
   );
 }

@@ -1,11 +1,11 @@
 import React from "react";
 import Form from "../components/sections/Form";
-import LandingLayout from "../components/layouts/LandingLayout";
+import MainPage from "../components/layouts/MainPage";
 
 export default function Contact() {
   return (
-    <LandingLayout>
+    <MainPage>
  <Form/>
-    </LandingLayout>
+    </MainPage>
   );
 }

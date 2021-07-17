@@ -3,7 +3,7 @@ import { Flex } from "@chakra-ui/react";
 import Header from "../sections/Header";
 import Footer from "../sections/Footer";
 
-export default function LandingLayout(props) {
+export default function MainPage(props) {
   return (
     <Flex
       direction="column"
