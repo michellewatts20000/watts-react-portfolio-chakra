@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import {
   Box,
@@ -7,7 +7,9 @@ import {
   Flex,
   Image,
   Heading,
-  Stack
+  Stack,
+  Center,
+  Link
 } from "@chakra-ui/react";
 
 export default function Hero({
@@ -16,6 +18,8 @@ export default function Hero({
   image,
   ctaLink,
   ctaText,
+  ctaLink2,
+  ctaText2,
   ...rest
 }) {
   return (
@@ -54,7 +58,21 @@ export default function Hero({
         >
           {subtitle}
         </Heading>
-        <Link to={ctaLink}>
+        <Center>
+        <Link href={ctaLink} isExternal>
+          <Button
+            colorScheme="primary"
+            borderRadius="8px"
+            py="4"
+            px="4"
+            mr="3"
+            lineHeight="1"
+            size="md"
+          >
+            {ctaText}
+          </Button>
+        </Link>
+          <Link href={ctaLink2} isExternal>
           <Button
             colorScheme="primary"
             borderRadius="8px"
@@ -63,10 +81,10 @@ export default function Hero({
             lineHeight="1"
             size="md"
           >
-            {ctaText}
+            {ctaText2}
           </Button>
         </Link>
-
+</Center>
       </Stack>
       <Box w={{ base: "70%", sm: "50%", md: "40%" }} mb={{ base: 12, md: 0 }}>
       
@@ -81,5 +99,7 @@ Hero.propTypes = {
   subtitle: PropTypes.string,
   image: PropTypes.string,
   ctaText: PropTypes.string,
-  ctaLink: PropTypes.string
+  ctaLink: PropTypes.string,
+  ctaText2: PropTypes.string,
+  ctaLink2: PropTypes.string
 };

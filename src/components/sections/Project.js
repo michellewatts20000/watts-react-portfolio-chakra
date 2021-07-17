@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box, SimpleGrid, Icon, Text, Stack, Flex } from '@chakra-ui/react';
+import { Box, SimpleGrid, Icon, Text, Stack, Flex, Center } from '@chakra-ui/react';
 import { GiKnifeFork } from 'react-icons/gi';
 import { FaBlogger, FaCalculator, FaCloudSunRain, FaCode } from 'react-icons/fa';
 import { GoNote } from 'react-icons/go';
@@ -8,7 +8,8 @@ import { ExternalLinkIcon } from '@chakra-ui/icons'
 
 const Feature = ({ title, text, icon, link1, link2 }) => {
   return (
-    <Stack>
+    <Stack>  
+      <Center>
       <Flex
         w={16}
         h={16}
@@ -20,14 +21,23 @@ const Feature = ({ title, text, icon, link1, link2 }) => {
         mb={1}>
         {icon}
       </Flex>
+      </Center>
+       <Center>
       <Text fontWeight={600}>{title}</Text>
+      </Center>
+      <Center>
       <Text color={'gray.600'}>{text}</Text>
-      <Link href={link1} isExternal>
+      </Center>
+      <Center>
+      <Link href={link1} mr="5" isExternal>
   Deployed App <ExternalLinkIcon mx="2px" />
 </Link>
 <Link href={link2} isExternal>
   GitHub <ExternalLinkIcon mx="2px" />
 </Link>
+</Center>
+
+   
     </Stack>
   );
 };

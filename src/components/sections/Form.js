@@ -28,7 +28,7 @@ import React from 'react';
               Get in touch
               <Text
                 as={'span'}
-                bgGradient="linear(to-r, red.400,pink.400)"
+                bggradient="linear(to-r, red.400,pink.400)"
                 bgClip="text">
                 !
               </Text>
@@ -112,7 +112,7 @@ import React from 'react';
               disabled={isSubmitting}
               color={'white'}
               _hover={{
-                bgGradient: 'linear(to-r, red.400,pink.400)',
+                bggradient: 'linear(to-r, red.400,pink.400)',
                 boxShadow: 'xl',
               }}>
               Submit
