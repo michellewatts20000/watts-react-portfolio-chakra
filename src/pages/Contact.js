@@ -1,11 +1,11 @@
 import React from "react";
-import Project from "../components/sections/Project";
+import Form from "../components/sections/Form";
 import LandingLayout from "../components/layouts/LandingLayout";
 
-export default function Portfolio() {
+export default function Contact() {
   return (
     <LandingLayout>
- <Project/>
+ <Form/>
     </LandingLayout>
   );
 }

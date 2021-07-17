@@ -12,8 +12,10 @@ export default function LandingLayout(props) {
       m="0 auto"
       {...props}
     >
-      <Header />
+      <Header />  
+   
       {props.children}
+   
       <Footer />
     </Flex>
   );

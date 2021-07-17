@@ -5,6 +5,7 @@ import { FaGithub, FaLinkedin } from 'react-icons/fa'
 
 function Footer() {
     return (
+     
         <Flex
             align="center"
             justify="space-between"
@@ -21,6 +22,7 @@ function Footer() {
             <IconButton icon={<FaLinkedin />} isRound='true' to="https://www.linkedin.com/in/michelle-e-watts/" ></IconButton>
             <IconButton ml={2} icon={<FaGithub />} isRound='true' to="https://github.com/michellewatts20000" ></IconButton>
         </Flex>
+       
 
     );
 }

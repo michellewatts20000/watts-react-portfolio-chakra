@@ -7,6 +7,8 @@ import {
 
 import Landing from "./pages/Landing";
 import Portfolio from "./pages/Portfolio";
+import Contact from "./pages/Contact";
+import Resume from "./pages/Resume";
 
 export default function App() {
   return (
@@ -14,6 +16,8 @@ export default function App() {
       <Switch>
          <Route exact path = "/" component = {Landing}/>
         <Route path = "/portfolio" component = {Portfolio}/>
+        <Route path = "/contact" component = {Contact}/>
+        <Route path = "/resume" component = {Resume}/>
       </Switch>
     </Router>
   );
