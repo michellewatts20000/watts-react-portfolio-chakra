@@ -1,86 +1,337 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import PropTypes from "prop-types";
+// import Image from 'next/image';
+import { Image } from "@chakra-ui/react"
 import {
-    Box,
-    Button,
-    Flex,
-    Image,
-    Heading,
-    Stack
-} from "@chakra-ui/react";
+  Box,
+  Center,
+  Heading,
+  Text,
+  Stack,
+  Avatar,
+  useColorModeValue,
+} from '@chakra-ui/react';
 
-export default function Project({
-    title,
-    subtitle,
-    image,
-    ctaLink,
-    ctaText,
-    ...rest
-}) {
-    return (
-        <Flex
-            align="center"
-            justify={{ base: "center", md: "space-around", xl: "space-between" }}
-            direction={{ base: "column-reverse", md: "row" }}
-            wrap="no-wrap"
-            minH="70vh"
-            px={8}
-            mb={16}
-            {...rest}
-        >
-            <Stack
-                spacing={4}
-                w={{ base: "80%", md: "40%" }}
-                align={["center", "center", "flex-start", "flex-start"]}
-            >
-                <Heading
-                    as="h1"
-                    size="xl"
-                    fontWeight="bold"
-                    color="primary.800"
-                    textAlign={["center", "center", "left", "left"]}
-                >
-                    {title}
-                </Heading>
-                <Heading
-                    as="h2"
-                    size="md"
-                    color="primary.800"
-                    opacity="0.8"
-                    fontWeight="normal"
-                    lineHeight={1.5}
-                    textAlign={["center", "center", "left", "left"]}
-                >
-                    {subtitle}
-                </Heading>
-                <Link to={ctaLink}>
-                    <Button
-                        colorScheme="primary"
-                        borderRadius="8px"
-                        py="4"
-                        px="4"
-                        lineHeight="1"
-                        size="md"
-                    >
-                        {ctaText}
-                    </Button>
-                </Link>
-
-            </Stack>
-            <Box w={{ base: "80%", sm: "60%", md: "50%" }} mb={{ base: 12, md: 0 }}>
-                {/* TODO: Make this change every X secs */}
-                <Image src={image} size="50%" borderRadius="full" shadow="2xl" />
-            </Box>
-        </Flex>
-    );
+export default function blogPostWithImage() {
+  return (
+    <Center py={6}>
+      <Box
+        maxW={'200px'}
+        w={'full'}
+        bg={useColorModeValue('white', 'gray.900')}
+        boxShadow={'2xl'}
+        rounded={'md'}
+        p={6}
+        m={20}
+        overflow={'hidden'}>
+        <Box
+          h={'150px'}
+          bg={'gray.100'}
+          mt={-6}
+          mx={-6}
+          mb={6}
+          pos={'relative'}>
+          <Image
+            src={
+              'https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'
+            }
+            layout={'fill'}
+          />
+        </Box>
+        <Stack>
+          <Text
+            color={'green.500'}
+            textTransform={'uppercase'}
+            fontWeight={800}
+            fontSize={'sm'}
+            letterSpacing={1.1}>
+            Blog
+          </Text>
+          <Heading
+            color={useColorModeValue('gray.700', 'white')}
+            fontSize={'2xl'}
+            fontFamily={'body'}>
+            Boost your conversion rate
+          </Heading>
+          <Text color={'gray.500'}>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+          </Text>
+        </Stack>
+        <Stack mt={6} direction={'row'} spacing={4} align={'center'}>
+          <Avatar
+            src={'https://avatars0.githubusercontent.com/u/1164541?v=4'}
+            alt={'Author'}
+          />
+          <Stack direction={'column'} spacing={0} fontSize={'sm'}>
+            <Text fontWeight={600}>Achim Rolle</Text>
+            <Text color={'gray.500'}>Feb 08, 2021 · 6min read</Text>
+          </Stack>
+        </Stack>
+      </Box>
+       <Box
+        maxW={'200px'}
+        w={'full'}
+        bg={useColorModeValue('white', 'gray.900')}
+        boxShadow={'2xl'}
+        rounded={'md'}
+        p={6}
+        overflow={'hidden'}>
+        <Box
+          h={'150px'}
+          bg={'gray.100'}
+          mt={-6}
+          mx={-6}
+          mb={6}
+          pos={'relative'}>
+          <Image
+            src={
+              'https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'
+            }
+            layout={'fill'}
+          />
+        </Box>
+        <Stack>
+          <Text
+            color={'green.500'}
+            textTransform={'uppercase'}
+            fontWeight={800}
+            fontSize={'sm'}
+            letterSpacing={1.1}>
+            Blog
+          </Text>
+          <Heading
+            color={useColorModeValue('gray.700', 'white')}
+            fontSize={'2xl'}
+            fontFamily={'body'}>
+            Boost your conversion rate
+          </Heading>
+          <Text color={'gray.500'}>
+             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+          </Text>
+        </Stack>
+        <Stack mt={6} direction={'row'} spacing={4} align={'center'}>
+          <Avatar
+            src={'https://avatars0.githubusercontent.com/u/1164541?v=4'}
+            alt={'Author'}
+          />
+          <Stack direction={'column'} spacing={0} fontSize={'sm'}>
+            <Text fontWeight={600}>Achim Rolle</Text>
+            <Text color={'gray.500'}>Feb 08, 2021 · 6min read</Text>
+          </Stack>
+        </Stack>
+      </Box>
+       <Box
+        maxW={'200px'}
+        w={'full'}
+        bg={useColorModeValue('white', 'gray.900')}
+        boxShadow={'2xl'}
+        rounded={'md'}
+        p={6}
+        m={20}
+        overflow={'hidden'}>
+        <Box
+          h={'150px'}
+          bg={'gray.100'}
+          mt={-6}
+          mx={-6}
+          mb={6}
+          pos={'relative'}>
+          <Image
+            src={
+              'https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'
+            }
+            layout={'fill'}
+          />
+        </Box>
+        <Stack>
+          <Text
+            color={'green.500'}
+            textTransform={'uppercase'}
+            fontWeight={800}
+            fontSize={'sm'}
+            letterSpacing={1.1}>
+            Blog
+          </Text>
+          <Heading
+            color={useColorModeValue('gray.700', 'white')}
+            fontSize={'2xl'}
+            fontFamily={'body'}>
+            Boost your conversion rate
+          </Heading>
+          <Text color={'gray.500'}>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+          </Text>
+        </Stack>
+        <Stack mt={6} direction={'row'} spacing={4} align={'center'}>
+          <Avatar
+            src={'https://avatars0.githubusercontent.com/u/1164541?v=4'}
+            alt={'Author'}
+          />
+          <Stack direction={'column'} spacing={0} fontSize={'sm'}>
+            <Text fontWeight={600}>Achim Rolle</Text>
+            <Text color={'gray.500'}>Feb 08, 2021 · 6min read</Text>
+          </Stack>
+        </Stack>
+      </Box>
+       <Box
+        maxW={'200px'}
+        w={'full'}
+        bg={useColorModeValue('white', 'gray.900')}
+        boxShadow={'2xl'}
+        rounded={'md'}
+        p={6}
+        m={20}
+        overflow={'hidden'}>
+        <Box
+          h={'150px'}
+          bg={'gray.100'}
+          mt={-6}
+          mx={-6}
+          mb={6}
+          pos={'relative'}>
+          <Image
+            src={
+              'https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'
+            }
+            layout={'fill'}
+          />
+        </Box>
+        <Stack>
+          <Text
+            color={'green.500'}
+            textTransform={'uppercase'}
+            fontWeight={800}
+            fontSize={'sm'}
+            letterSpacing={1.1}>
+            Blog
+          </Text>
+          <Heading
+            color={useColorModeValue('gray.700', 'white')}
+            fontSize={'2xl'}
+            fontFamily={'body'}>
+            Boost your conversion rate
+          </Heading>
+          <Text color={'gray.500'}>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+          </Text>
+        </Stack>
+        <Stack mt={6} direction={'row'} spacing={4} align={'center'}>
+          <Avatar
+            src={'https://avatars0.githubusercontent.com/u/1164541?v=4'}
+            alt={'Author'}
+          />
+          <Stack direction={'column'} spacing={0} fontSize={'sm'}>
+            <Text fontWeight={600}>Achim Rolle</Text>
+            <Text color={'gray.500'}>Feb 08, 2021 · 6min read</Text>
+          </Stack>
+        </Stack>
+      </Box>
+       <Box
+        maxW={'200px'}
+        w={'full'}
+        bg={useColorModeValue('white', 'gray.900')}
+        boxShadow={'2xl'}
+        rounded={'md'}
+        p={6}
+        m={20}
+        overflow={'hidden'}>
+        <Box
+          h={'150px'}
+          bg={'gray.100'}
+          mt={-6}
+          mx={-6}
+          mb={6}
+          pos={'relative'}>
+          <Image
+            src={
+              'https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'
+            }
+            layout={'fill'}
+          />
+        </Box>
+        <Stack>
+          <Text
+            color={'green.500'}
+            textTransform={'uppercase'}
+            fontWeight={800}
+            fontSize={'sm'}
+            letterSpacing={1.1}>
+            Blog
+          </Text>
+          <Heading
+            color={useColorModeValue('gray.700', 'white')}
+            fontSize={'2xl'}
+            fontFamily={'body'}>
+            Boost your conversion rate
+          </Heading>
+          <Text color={'gray.500'}>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+          </Text>
+        </Stack>
+        <Stack mt={6} direction={'row'} spacing={4} align={'center'}>
+          <Avatar
+            src={'https://avatars0.githubusercontent.com/u/1164541?v=4'}
+            alt={'Author'}
+          />
+          <Stack direction={'column'} spacing={0} fontSize={'sm'}>
+            <Text fontWeight={600}>Achim Rolle</Text>
+            <Text color={'gray.500'}>Feb 08, 2021 · 6min read</Text>
+          </Stack>
+        </Stack>
+      </Box>
+       <Box
+        maxW={'200px'}
+        w={'full'}
+        bg={useColorModeValue('white', 'gray.900')}
+        boxShadow={'2xl'}
+        rounded={'md'}
+        p={6}
+        m={20}
+        overflow={'hidden'}>
+        <Box
+          h={'150px'}
+          bg={'gray.100'}
+          mt={-6}
+          mx={-6}
+          mb={6}
+          pos={'relative'}>
+          <Image
+            src={
+              'https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'
+            }
+            layout={'fill'}
+          />
+        </Box>
+        <Stack>
+          <Text
+            color={'green.500'}
+            textTransform={'uppercase'}
+            fontWeight={800}
+            fontSize={'sm'}
+            letterSpacing={1.1}>
+            Blog
+          </Text>
+          <Heading
+            color={useColorModeValue('gray.700', 'white')}
+            fontSize={'2xl'}
+            fontFamily={'body'}>
+            Boost your conversion rate
+          </Heading>
+          <Text color={'gray.500'}>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+          </Text>
+        </Stack>
+        <Stack mt={6} direction={'row'} spacing={4} align={'center'}>
+          <Avatar
+            src={'https://avatars0.githubusercontent.com/u/1164541?v=4'}
+            alt={'Author'}
+          />
+          <Stack direction={'column'} spacing={0} fontSize={'sm'}>
+            <Text fontWeight={600}>Achim Rolle</Text>
+            <Text color={'gray.500'}>Feb 08, 2021 · 6min read</Text>
+          </Stack>
+        </Stack>
+      </Box>
+    </Center>
+    
+  );
 }
-
-Project.propTypes = {
-    title: PropTypes.string,
-    subtitle: PropTypes.string,
-    image: PropTypes.string,
-    ctaText: PropTypes.string,
-    ctaLink: PropTypes.string
-};
-

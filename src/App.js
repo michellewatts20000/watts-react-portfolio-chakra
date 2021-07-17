@@ -12,13 +12,8 @@ export default function App() {
   return (
     <Router>
       <Switch>
-        <Route path="/">
-          <Landing />
-        </Route>
-        <Route path="/">
-          <Portfolio />
-        </Route>
-
+         <Route exact path = "/" component = {Landing}/>
+        <Route path = "/portfolio" component = {Portfolio}/>
       </Switch>
     </Router>
   );

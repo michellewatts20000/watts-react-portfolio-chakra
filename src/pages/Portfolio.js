@@ -10,7 +10,7 @@ export default function Portfolio() {
         subtitle="This is my first project"
         image=""
         ctaText="LinkedIn"
-        ctaLink="https://www.linkedin.com/in/unions-nsw-882118175/"
+        ctaLink="https://www.linkedin.com/in/michelle-e-watts/"
       />
     </LandingLayout>
   );
