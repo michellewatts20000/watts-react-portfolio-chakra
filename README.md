@@ -8,7 +8,6 @@
 ## Technologies used
 React, Chakra
 
-
 ## What?
 Shows all the projects I have worked on over the last few months.
 
