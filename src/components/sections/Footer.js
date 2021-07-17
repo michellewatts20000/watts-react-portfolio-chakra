@@ -15,7 +15,7 @@ function Footer() {
             color={["primary.700", "primary.700"]}
         >
             <Text color={["white", "white", "primary.700", "primary.700"]} fontSize="lg" fontWeight="bold">
-                Michelle Watts Portfolio
+                Michelle Watts' Portfolio
             </Text>
             <Spacer></Spacer>
             <IconButton icon={<FaLinkedin />} isRound='true' onClick={() => window.open('https://www.linkedin.com/in/michelle-e-watts/')}  ></IconButton>

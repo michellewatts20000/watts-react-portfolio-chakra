@@ -6,7 +6,7 @@ export default function About() {
   return (
     <MainPage>
       <Hero
-        title="Michelle Watts Portfolio"
+        title="Michelle Watts' Portfolio"
         subtitle="Hello! I am a digital campaigner at Unions NSW and a web developer. I have a background in graphic/web design & audio engineering. Read more about me ... or jump straight to my projects."
         image="/img/my-face.jpeg"
         ctaText="LinkedIn"

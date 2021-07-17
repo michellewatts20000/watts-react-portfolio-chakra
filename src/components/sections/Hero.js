@@ -68,9 +68,9 @@ export default function Hero({
         </Link>
 
       </Stack>
-      <Box w={{ base: "80%", sm: "60%", md: "50%" }} mb={{ base: 12, md: 0 }}>
+      <Box w={{ base: "70%", sm: "50%", md: "40%" }} mb={{ base: 12, md: 0 }}>
       
-        <Image src={image} size="50%" borderRadius="full" shadow="2xl" />
+        <Image src={image} size="10%" borderRadius="full" shadow="2xl" />
       </Box>
     </Flex>
   );
