@@ -1,5 +1,4 @@
 import React from "react";
-// import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import {
   Box,
@@ -28,7 +27,7 @@ export default function Hero({
       justify={{ base: "center", md: "space-around", xl: "space-between" }}
       direction={{ base: "column-reverse", md: "row" }}
       wrap="no-wrap"
-      minH="70vh"
+      minH="65vh"
       px={8}
       mb={16}
       {...rest}

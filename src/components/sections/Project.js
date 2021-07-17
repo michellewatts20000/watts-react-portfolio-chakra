@@ -19,23 +19,22 @@ const Feature = ({ title, text, icon, link1, link2 }) => {
         rounded={'full'}
         bg={'#CBC3E3'}
         mb={1}>
+          
         {icon}
       </Flex>
       </Center>
-       <Center>
-      <Text fontWeight={600}>{title}</Text>
-      </Center>
-      <Center>
-      <Text color={'gray.600'}>{text}</Text>
-      </Center>
-      <Center>
-      <Link href={link1} mr="5" isExternal>
+    
+      <Text textAlign={["center", "center", "left", "left"]} fontWeight={800}>{title}</Text>
+     
+      <Text textAlign={["center", "center", "left", "left"]} color={'gray.600'}>{text}</Text>
+      
+      <Link color={'#4a0d99'} textAlign={["center", "center", "left", "left"]} href={link1} mr="5" isExternal>
   Deployed App <ExternalLinkIcon mx="2px" />
 </Link>
-<Link href={link2} isExternal>
+<Link color={'#4a0d99'} textAlign={["center", "center", "left", "left"]} href={link2} isExternal>
   GitHub <ExternalLinkIcon mx="2px" />
 </Link>
-</Center>
+
 
    
     </Stack>

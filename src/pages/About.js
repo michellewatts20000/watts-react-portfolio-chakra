@@ -14,6 +14,7 @@ export default function About() {
         ctaText2="GitHub"
         ctaLink2="https://github.com/michellewatts20000"
       />
+      
     </MainPage>
   );
 }
