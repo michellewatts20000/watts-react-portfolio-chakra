@@ -1,5 +1,7 @@
 import React from 'react';
-import {
+ import { Formik } from 'formik';
+
+ import {
   Box,
   Stack,
   Heading,
@@ -9,20 +11,16 @@ import {
   Center,
   Textarea
 } from '@chakra-ui/react';
-
-
-export default function JoinOurTeam() {
-  return (
-  
-    <Box>
-      <Center>
+ 
+ const Basic = () => (
+    <Center>
         <Stack
           bg={'gray.50'}
           rounded={'xl'}
           p={{ base: 4, sm: 6, md: 8 }}
           spacing={{ base: 8 }}
           maxW={{ lg: 'lg' }}>
-          <Stack spacing={4}>
+       <Stack spacing={4}>
             <Heading
               color={'gray.800'}
               lineHeight={1.1}
@@ -39,10 +37,41 @@ export default function JoinOurTeam() {
               If you want to reach out please send me a message through this form.
             </Text>
           </Stack>
-          <Box as={'form'} mt={10}>
+     <Formik
+       initialValues={{ email: '', password: '' }}
+       validate={values => {
+         const errors = {};
+         if (!values.email) {
+           errors.email = 'Required';
+         } else if (
+           !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)
+         ) {
+           errors.email = 'Invalid email address';
+         }
+         return errors;
+       }}
+       onSubmit={(values, { setSubmitting }) => {
+         setTimeout(() => {
+           alert(JSON.stringify(values, null, 2));
+           setSubmitting(false);
+         }, 400);
+       }}
+     >
+       {({
+         values,
+         errors,
+         touched,
+         handleChange,
+         handleBlur,
+         handleSubmit,
+         isSubmitting,
+         /* and other goodies */
+       }) => (
+         <form onSubmit={handleSubmit}>
+            <Box as={'form'} >
             <Stack spacing={4}>
-              <Input
-                placeholder="Firstname"
+            <Input
+                placeholder="Your name"
                 bg={'gray.100'}
                 border={0}
                 color={'gray.500'}
@@ -50,29 +79,37 @@ export default function JoinOurTeam() {
                   color: 'gray.500',
                 }}
               />
-              <Input
-                placeholder="your@email.com"
+           <Input
+            placeholder="your@email.com"
                 bg={'gray.100'}
                 border={0}
                 color={'gray.500'}
                 _placeholder={{
                   color: 'gray.500',
                 }}
-              />
-             <Textarea  placeholder="Your message"
+             type="email"
+             name="email"
+             onChange={handleChange}
+             onBlur={handleBlur}
+             value={values.email}
+           />
+           {errors.email && touched.email && errors.email}
+         
+           <Textarea  placeholder="Your message"
                 bg={'gray.100'}
                 border={0}
                 color={'gray.500'}
                 _placeholder={{
                   color: 'gray.500',
                 }} />
-          
-            </Stack>
-            <Button
+                </Stack>
+                <Button
               fontFamily={'heading'}
               mt={8}
               w={'full'}
+              type="submit"
               colorScheme="purple"
+              disabled={isSubmitting}
               color={'white'}
               _hover={{
                 bgGradient: 'linear(to-r, red.400,pink.400)',
@@ -80,13 +117,13 @@ export default function JoinOurTeam() {
               }}>
               Submit
             </Button>
-          </Box>
-    
-        </Stack>
-    </Center>
-      
-    </Box>
-  
-  );
-}
-
+            </Box>
+          
+         </form>
+       )}
+     </Formik>
+  </Stack>
+  </Center>
+ );
+ 
+ export default Basic;

@@ -3,9 +3,6 @@ import { Box, SimpleGrid, Icon, Text, Stack, Flex } from '@chakra-ui/react';
 import { GiKnifeFork } from 'react-icons/gi';
 import { FaBlogger, FaCalculator, FaCloudSunRain, FaCode } from 'react-icons/fa';
 import { GoNote } from 'react-icons/go';
-
-
-
 import { Link } from "@chakra-ui/react"
 import { ExternalLinkIcon } from '@chakra-ui/icons'
 
@@ -16,10 +13,10 @@ const Feature = ({ title, text, icon, link1, link2 }) => {
         w={16}
         h={16}
         align={'center'}
+        alignItems={'center'}
         justify={'center'}
-        color={'white'}
         rounded={'full'}
-        bg={'gray.100'}
+        bg={'#CBC3E3'}
         mb={1}>
         {icon}
       </Flex>
