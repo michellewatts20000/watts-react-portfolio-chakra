@@ -1,6 +1,6 @@
 import React from "react"
 import Navigation from "../sections/Navigation";
-import { Box, Flex, Button, CloseButton, useColorModeValue } from "@chakra-ui/react"
+import { Box, Flex, Button, CloseButton} from "@chakra-ui/react"
 import Logo from "../ui/Logo"
 import { HamburgerIcon } from '@chakra-ui/icons'
  
@@ -49,19 +49,12 @@ const toggleMenu = () => setShow(!show)
          
           <Navigation to="/contact" isLast>
             <Button
-              size="sm"
-              rounded="md"
-              colorScheme="primary"
-            color={useColorModeValue('white', 'primary.800')}
-            bg={useColorModeValue('primary.800', 'white')}
-              _hover={{
-                bg: [
-                  "primary.100",
-                  "primary.100",
-                  "primary.600",
-                  "primary.600",
-                ],
-              }}
+            colorScheme="primary"
+            borderRadius="8px"
+            py="4"
+            px="4"
+            lineHeight="1"
+            size="sm"
             >
               Contact
             </Button>

@@ -47,7 +47,7 @@ export default function Hero({
           size="3xl"
           fontWeight="bold"
           
-          color={useColorModeValue('primary.800', 'gray.100')}
+          color="primary.500"
           textAlign={["center", "center", "left", "left"]}
         >
           {title}
@@ -68,14 +68,12 @@ export default function Hero({
            <motion.div whileHover={{ scale: 1.1, opacity: 1 }}>
           <Button
             colorScheme="primary"
-            color={useColorModeValue('white', 'primary.800')}
-            bg={useColorModeValue('primary.800', 'white')}
             borderRadius="8px"
             py="4"
             px="4"
-            mr="3"
             lineHeight="1"
             size="md"
+            mr="3"
           >
             {ctaText}
           </Button>
@@ -85,13 +83,12 @@ export default function Hero({
             <motion.div whileHover={{ scale: 1.1, opacity: 1 }}>
           <Button
             colorScheme="primary"
-            color={useColorModeValue('white', 'primary.800')}
-            bg={useColorModeValue('primary.800', 'white')}
             borderRadius="8px"
             py="4"
             px="4"
             lineHeight="1"
             size="md"
+            
           >
             {ctaText2}
           </Button>

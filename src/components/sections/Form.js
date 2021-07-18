@@ -108,7 +108,7 @@ import React from 'react';
               mt={8}
               w={'full'}
               type="submit"
-              colorScheme="purple"
+              colorScheme="primary"
               disabled={isSubmitting}
               color={'white'}
               _hover={{
