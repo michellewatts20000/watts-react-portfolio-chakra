@@ -12,7 +12,7 @@ import Resume from "./pages/Resume";
 
 export default function App() {
   return (
-     <BrowserRouter basename="https://michellewatts20000.github.io/watts-react-portfolio-chakra/">
+     <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Switch>
         <Route exact path = "/" component = {About}/>
         <Route path = "/portfolio" component = {Portfolio}/>
