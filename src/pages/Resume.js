@@ -1,5 +1,6 @@
 import React from "react";
 import List from "../components/sections/List";
+import Statistics from "../components/sections/Statistics";
 import MainPage from "../components/layouts/MainPage";
 import { motion } from "framer-motion"
 import {
@@ -46,15 +47,20 @@ solving and UX.
       <Container maxW={'6xl'} mt={10}>
         <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} spacing={10}>
       <List
-        title="Languages"
+        title="Team-oriented"
         id="languages"
-        text="JavaScript ES6+, CSS3, HTML5, SQL, NoSQL"
+        text="Team-oriented individual with strengths in analytical problem solving and collaborating across
+diverse groups. Adept at working independently and collaborating with teams across multiple functions to
+take information from a wide variety of sources and effectively break down concepts in layman terms to
+diverse audiences."
       />
    
       <List
-        title="Tools"
-        id="tools"
-        text="Express, React, Node, Handlebars, JQuery, Bootstrap, Chakra UI, GitHub, MongoDB, MySQL"
+        title="Strengths"
+        id="strengths"
+        text="A critical thinker with an eye for aesthetics and a research-based approach to design and storytelling.
+Strengths include problem solving, project management, and agile adaptation to last minute support
+changes."
       />
       <List
         title="Bootcamp Certificate"
@@ -66,10 +72,11 @@ ReactJS."
 
   
       </SimpleGrid>
-           
+          
       </Container>
+     
     </Box>
-
+ < Statistics /> 
     </MainPage>
   );
 }

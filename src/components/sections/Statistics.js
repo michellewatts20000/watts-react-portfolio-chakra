@@ -66,14 +66,7 @@ export default function BasicStatistics() {
       mb={16}
   
     >
-    <Box maxW="7xl" mx={'auto'} pt={5} px={{ base: 2, sm: 12, md: 17 }}>
-           <Stack spacing={4} as={Container} maxW={'3xl'} mb="5" textAlign={'center'}>
-        <Heading fontSize={'3xl'}>Hi! My name is Michelle Watts.</Heading>
-        <Text color={'gray.600'} fontSize={'xl'}>
-          I am a digital campaigner at Unions NSW and a web developer. I have a background in graphic/web design &amp; audio engineering.
-        </Text>
-      </Stack>
-
+  
       <SimpleGrid columns={{ base: 1, md: 3 }} spacing={{ base: 5, lg: 8 }}>
         <StatsCard
           title={'Languages'}
@@ -92,24 +85,7 @@ export default function BasicStatistics() {
         />
        
       </SimpleGrid>
-       <Center mt="10">
-         <Link href="https://drive.google.com/file/d/1krIgipz9jmquz0QYmlm1wQfsUzI-PVIB/view?usp=sharing" isExternal>
-            <motion.div whileHover={{ scale: 1.1, opacity: 1 }}>
-          <Button
-            colorScheme="primary"
-            borderRadius="8px"
-            py="4"
-            px="4"
-            lineHeight="1"
-            size="md"
-          >
-            Download Resume
-          </Button>
-          </motion.div>
-        </Link>
-        </Center>
-        
-    </Box>
+       
     
      </Flex>
   );
