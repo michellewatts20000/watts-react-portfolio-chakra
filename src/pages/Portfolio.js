@@ -7,7 +7,6 @@ import { GiKnifeFork } from 'react-icons/gi';
 import { FaBlogger, FaCalculator, FaCloudSunRain, FaCode } from 'react-icons/fa';
 
 
-
 export default function Portfolio() {
   return (
     <MainPage>

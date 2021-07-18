@@ -10,6 +10,7 @@ import {
   Center,
   Link
 } from "@chakra-ui/react";
+import { motion } from "framer-motion"
 
 export default function Hero({
   title,
@@ -59,6 +60,7 @@ export default function Hero({
         </Heading>
         <Center>
         <Link href={ctaLink} isExternal>
+           <motion.div whileHover={{ scale: 1.1, opacity: 1 }}>
           <Button
             colorScheme="primary"
             borderRadius="8px"
@@ -70,8 +72,10 @@ export default function Hero({
           >
             {ctaText}
           </Button>
+          </motion.div>
         </Link>
           <Link href={ctaLink2} isExternal>
+            <motion.div whileHover={{ scale: 1.1, opacity: 1 }}>
           <Button
             colorScheme="primary"
             borderRadius="8px"
@@ -82,11 +86,13 @@ export default function Hero({
           >
             {ctaText2}
           </Button>
+          </motion.div>
         </Link>
 </Center>
       </Stack>
+
       <Box w={{ base: "70%", sm: "50%", md: "40%" }} mb={{ base: 12, md: 0 }}>
-      
+<motion.div animate={{ x: 100, scale:1.5, rotate:90 }} />
         <Image src={image} size="10%" borderRadius="full" shadow="2xl" />
       </Box>
     </Flex>

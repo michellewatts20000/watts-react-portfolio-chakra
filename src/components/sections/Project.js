@@ -3,6 +3,8 @@ import {Text, Stack, Flex, Center } from '@chakra-ui/react';
 import { Link } from "@chakra-ui/react"
 import { ExternalLinkIcon } from '@chakra-ui/icons'
 import PropTypes from "prop-types";
+
+
 export default function Project({
   icon,
   title,
@@ -12,7 +14,7 @@ export default function Project({
 
 }) {
   return (
-    <Stack>  
+    <Stack p={5}>  
       <Center>
       <Flex
         w={16}
