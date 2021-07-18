@@ -8,13 +8,10 @@ import {
 } from '@chakra-ui/react';
 import { CheckIcon } from '@chakra-ui/icons';
 
-
-
-
 export default function List({
-  title,
- id,
- text
+title,
+id,
+text
 }) {
   return (
     
