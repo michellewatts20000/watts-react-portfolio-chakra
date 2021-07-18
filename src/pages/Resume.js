@@ -1,5 +1,4 @@
 import React from "react";
-// import Statistics from "../components/sections/Statistics";
 import List from "../components/sections/List";
 import MainPage from "../components/layouts/MainPage";
 import { motion } from "framer-motion"
