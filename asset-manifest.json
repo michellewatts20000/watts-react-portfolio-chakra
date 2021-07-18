@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.js": "/watts-react-portfolio-chakra/static/js/main.9e389d2b.chunk.js",
-    "main.js.map": "/watts-react-portfolio-chakra/static/js/main.9e389d2b.chunk.js.map",
+    "main.js": "/watts-react-portfolio-chakra/static/js/main.e960af93.chunk.js",
+    "main.js.map": "/watts-react-portfolio-chakra/static/js/main.e960af93.chunk.js.map",
     "runtime-main.js": "/watts-react-portfolio-chakra/static/js/runtime-main.b87946e0.js",
     "runtime-main.js.map": "/watts-react-portfolio-chakra/static/js/runtime-main.b87946e0.js.map",
-    "static/js/2.9386cedf.chunk.js": "/watts-react-portfolio-chakra/static/js/2.9386cedf.chunk.js",
-    "static/js/2.9386cedf.chunk.js.map": "/watts-react-portfolio-chakra/static/js/2.9386cedf.chunk.js.map",
+    "static/js/2.4f7bba48.chunk.js": "/watts-react-portfolio-chakra/static/js/2.4f7bba48.chunk.js",
+    "static/js/2.4f7bba48.chunk.js.map": "/watts-react-portfolio-chakra/static/js/2.4f7bba48.chunk.js.map",
     "index.html": "/watts-react-portfolio-chakra/index.html",
-    "static/js/2.9386cedf.chunk.js.LICENSE.txt": "/watts-react-portfolio-chakra/static/js/2.9386cedf.chunk.js.LICENSE.txt"
+    "static/js/2.4f7bba48.chunk.js.LICENSE.txt": "/watts-react-portfolio-chakra/static/js/2.4f7bba48.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.b87946e0.js",
-    "static/js/2.9386cedf.chunk.js",
-    "static/js/main.9e389d2b.chunk.js"
+    "static/js/2.4f7bba48.chunk.js",
+    "static/js/main.e960af93.chunk.js"
   ]
 }
