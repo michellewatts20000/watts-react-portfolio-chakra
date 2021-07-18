@@ -10,7 +10,7 @@ function Footer() {
             justify="space-between"
             wrap="wrap"
             w="100%"
-            p={8}
+            p={4}
             bg={["primary.500", "primary.500", "transparent", "transparent"]}
             color={["primary.700", "primary.700"]}
         >

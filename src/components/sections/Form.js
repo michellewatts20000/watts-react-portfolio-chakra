@@ -68,7 +68,7 @@ import React from 'react';
          /* and other goodies */
        }) => (
          <form onSubmit={handleSubmit}>
-            <Box>
+            <Box mb="8">
             <Stack spacing={4}>
             <Input isRequired
                 placeholder="Your name"
@@ -105,15 +105,16 @@ import React from 'react';
                 </Stack>
                 <Button
               fontFamily={'heading'}
-              mt={8}
+              mt={5}
               w={'full'}
               type="submit"
               colorScheme="primary"
+              bg={["primary.900", "primary.900", "primary.200", "primary.200"]}
               disabled={isSubmitting}
               color={'white'}
               _hover={{
                 bggradient: 'linear(to-r, red.400,pink.400)',
-                boxShadow: 'xl',
+                boxShadow: 'md',
               }}>
               Submit
             </Button>
