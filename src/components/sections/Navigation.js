@@ -10,7 +10,7 @@ const Navigation = (props) => {
       mb={{ base: isLast ? 0 : 8, sm: 0 }}
       mr={{ base: 0, sm: isLast ? 0 : 8 }}
       display="block"
-      as={window.location.pathname === to ? 'u' : ''}
+      as={"watts-react-portfolio-chakra" + window.location.pathname === to ? 'u' : ''}
       {...rest}
     >
       <Link to={to}>{children}</Link>
