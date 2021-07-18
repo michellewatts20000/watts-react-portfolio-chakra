@@ -2,31 +2,30 @@ import React from "react";
 import {
   Box,
   chakra,
+  Button,
+  Link,
   Flex,
+  Center,
   SimpleGrid,
   Stat,
   StatLabel,
   StatNumber,
   useColorModeValue,
 } from '@chakra-ui/react';
-import { ReactNode } from 'react';
-import { BsPerson } from 'react-icons/bs';
+import { BsClipboardData } from 'react-icons/bs';
 import { FiServer } from 'react-icons/fi';
-import { GoLocation } from 'react-icons/go';
+import { GoBook} from 'react-icons/go';
+import { motion } from "framer-motion"
 
-interface StatsCardProps {
-  title: string;
-  stat: string;
-  icon: ReactNode;
-}
-function StatsCard(props: StatsCardProps) {
+
+function StatsCard(props){
   const { title, stat, icon } = props;
   return (
    
     <Stat
       px={{ base: 2, md: 4 }}
       py={'5'}
-      shadow={'xl'}
+      shadow={'s'}
       border={'1px solid'}
       borderColor={useColorModeValue('gray.800', 'gray.500')}
       rounded={'lg'}>
@@ -69,26 +68,44 @@ export default function BasicStatistics() {
         fontSize={'4xl'}
         py={5}
         fontWeight={'bold'}>
-        Our company is expanding, you could be too.
+       My skills
       </chakra.h1>
       <SimpleGrid columns={{ base: 1, md: 3 }} spacing={{ base: 5, lg: 8 }}>
         <StatsCard
-          title={'Users'}
-          stat={'5,000'}
-          icon={<BsPerson size={'3em'} />}
+          title={'Languages'}
+          stat={'JavaScript ES6+, CSS3, HTML5, SQL, NoSQL'}
+          icon={<BsClipboardData size={'3em'} />}
         />
         <StatsCard
-          title={'Servers'}
-          stat={'1,000'}
+          title={'Applications'}
+          stat={'GitHub, MongoDB, MySQL'}
           icon={<FiServer size={'3em'} />}
         />
         <StatsCard
-          title={'Datacenters'}
-          stat={'7'}
-          icon={<GoLocation size={'3em'} />}
+          title={'Tools'}
+          stat={'Chakra, Express, React, Node.js, Handlebars, JQuery, Bootstrap'}
+          icon={<GoBook size={'3em'} />}
         />
+       
       </SimpleGrid>
+       <Center mt="10">
+         <Link href="https://drive.google.com/file/d/1krIgipz9jmquz0QYmlm1wQfsUzI-PVIB/view?usp=sharing" isExternal>
+            <motion.div whileHover={{ scale: 1.1, opacity: 1 }}>
+          <Button
+            colorScheme="primary"
+            borderRadius="8px"
+            py="4"
+            px="4"
+            lineHeight="1"
+            size="md"
+          >
+            Download Resume
+          </Button>
+          </motion.div>
+        </Link>
+        </Center>
     </Box>
+    
      </Flex>
   );
 }

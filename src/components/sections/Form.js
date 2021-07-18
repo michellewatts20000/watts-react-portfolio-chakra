@@ -70,7 +70,7 @@ import React from 'react';
          <form onSubmit={handleSubmit}>
             <Box>
             <Stack spacing={4}>
-            <Input
+            <Input isRequired
                 placeholder="Your name"
                 bg={'gray.100'}
                 border={0}
@@ -95,7 +95,7 @@ import React from 'react';
            />
            {errors.email && touched.email && errors.email}
          
-           <Textarea  placeholder="Your message"
+           <Textarea isRequired  placeholder="Your message"
                 bg={'gray.100'}
                 border={0}
                 color={'gray.500'}

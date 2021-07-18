@@ -15,7 +15,17 @@ const colors = {
    fonts: {
     heading: "Open Sans",
     body: "Raleway",
-  }
+  },
+  modes: {
+      dark: {
+        bg: '#333',
+        color:'white'
+      },
+      light: {
+        bg: '#ddd'
+        
+      },
+    }
 };
 
 
