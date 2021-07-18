@@ -1,6 +1,10 @@
 import React from "react";
 import {
   Box,
+  Stack,
+  Container,
+  Heading,
+  Text,
   chakra,
   Button,
   Link,
@@ -63,13 +67,13 @@ export default function BasicStatistics() {
   
     >
     <Box maxW="7xl" mx={'auto'} pt={5} px={{ base: 2, sm: 12, md: 17 }}>
-      <chakra.h1
-        textAlign={'center'}
-        fontSize={'4xl'}
-        py={5}
-        fontWeight={'bold'}>
-       My skills
-      </chakra.h1>
+           <Stack spacing={4} as={Container} maxW={'3xl'} mb="5" textAlign={'center'}>
+        <Heading fontSize={'3xl'}>Hi! My name is Michelle Watts.</Heading>
+        <Text color={'gray.600'} fontSize={'xl'}>
+          I am a digital campaigner at Unions NSW and a web developer. I have a background in graphic/web design &amp; audio engineering.
+        </Text>
+      </Stack>
+
       <SimpleGrid columns={{ base: 1, md: 3 }} spacing={{ base: 5, lg: 8 }}>
         <StatsCard
           title={'Languages'}
@@ -104,6 +108,7 @@ export default function BasicStatistics() {
           </motion.div>
         </Link>
         </Center>
+        
     </Box>
     
      </Flex>

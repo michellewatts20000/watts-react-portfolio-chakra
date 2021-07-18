@@ -16,7 +16,7 @@ export default function Portfolio() {
           text={
             'A full-stack app that calculates the amount of unpaid hours and salary you have worked over one year. Admin has access to all the user entries via a login page.'
           }
-          link1={"https://the-right-to-switch-off.herokuapp.com/"}
+          link1={"https://unpaid-overtime.herokuapp.com"}
           link2={"https://github.com/michellewatts20000/unpaid-overtime-calc"}
         />
         <Project
@@ -56,7 +56,7 @@ export default function Portfolio() {
           link2={"https://github.com/michellewatts20000/weather-dashboard"}
         />
         <Project
-          icon={<Center><Image src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80" rounded={'full'} align={["center", "center", "left", "left"]} alt="Code quiz" /></Center>}
+          icon={<Center><Image src="./img/code-img-land.png" rounded={'2xl'} align={["center", "center", "left", "left"]} alt="Code quiz" /></Center>}
           title={'Code quiz'}
           text={
             'You have 75 seconds to answer 5 coding questions. Once you have finished the quiz you will be asked to enter your initials to get yourself on the high scores table.'
