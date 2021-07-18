@@ -1,5 +1,6 @@
 import { extendTheme } from "@chakra-ui/react";
 
+
 const colors = {
   primary: {
     100: "#CBC3E3",
@@ -15,22 +16,16 @@ const colors = {
    fonts: {
     heading: "Open Sans",
     body: "Raleway",
-  },
-  modes: {
-      dark: {
-        bg: '#333',
-        color:'white'
-      },
-      light: {
-        bg: '#ddd'
-        
-      },
-    }
+  }
 };
 
+const config = {
+  initialColorMode: "light",
+  useSystemColorMode: false,
+}
 
 
 
-const customTheme = extendTheme({ colors });
+const customTheme = extendTheme({ colors, config });
 
 export default customTheme;

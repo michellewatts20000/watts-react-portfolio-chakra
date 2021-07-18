@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+// import { mode } from '@chakra-ui/theme-tools';
 import {
   Box,
   Button,
@@ -8,7 +9,8 @@ import {
   Heading,
   Stack,
   Center,
-  Link
+  Link,
+  useColorModeValue
 } from "@chakra-ui/react";
 import { motion } from "framer-motion"
 
@@ -25,6 +27,7 @@ export default function Hero({
   return (
     <Flex
       align="center"
+      color={useColorModeValue('gray.800', 'gray.200')}
       justify={{ base: "center", md: "space-around", xl: "space-between" }}
       direction={{ base: "column-reverse", md: "row" }}
       wrap="no-wrap"
@@ -34,6 +37,7 @@ export default function Hero({
       {...rest}
     >
       <Stack
+      
         spacing={4}
         w={{ base: "80%", md: "40%" }}
         align={["center", "center", "flex-start", "flex-start"]}
@@ -42,7 +46,7 @@ export default function Hero({
           as="h1"
           size="3xl"
           fontWeight="bold"
-          color="primary.800"
+          color={useColorModeValue('primary.800', 'gray.100')}
           textAlign={["center", "center", "left", "left"]}
         >
           {title}
@@ -50,7 +54,7 @@ export default function Hero({
         <Heading
           as="h2"
           size="md"
-          color="primary.800"
+          color={useColorModeValue('gray.800', 'gray.100')}
           opacity="0.8"
           fontWeight="normal"
           lineHeight={1.5}
@@ -63,6 +67,8 @@ export default function Hero({
            <motion.div whileHover={{ scale: 1.1, opacity: 1 }}>
           <Button
             colorScheme="primary"
+            color={useColorModeValue('white', 'primary.800')}
+            bg={useColorModeValue('primary.800', 'white')}
             borderRadius="8px"
             py="4"
             px="4"
@@ -78,6 +84,8 @@ export default function Hero({
             <motion.div whileHover={{ scale: 1.1, opacity: 1 }}>
           <Button
             colorScheme="primary"
+            color={useColorModeValue('white', 'primary.800')}
+            bg={useColorModeValue('primary.800', 'white')}
             borderRadius="8px"
             py="4"
             px="4"
