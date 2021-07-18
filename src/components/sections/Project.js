@@ -64,13 +64,13 @@ export default function Project({
             py="4"
             px="4"
             lineHeight="1"
-            size="md"><Link fontWeight={600} href={link1}>Deployed</Link></Button>
+            size="md"><Link fontWeight={600} href={link1} isExternal>Deployed</Link></Button>
            <Button colorScheme="primary"
             borderRadius="8px"
             py="4"
             px="4"
             lineHeight="1"
-            size="md"><Link fontWeight={600} href={link2}>GitHub</Link></Button>
+            size="md"><Link fontWeight={600} href={link2} isExternal>GitHub</Link></Button>
          
         </Stack>
       </Box>
