@@ -11,7 +11,7 @@ import Resume from "./pages/Resume";
 
 export default function App() {
   return (
-    <Router basename={"https://michellewatts20000.github.io/watts-react-portfolio-chakra/"}>
+    <Router>
       <Switch>
         <Route exact path = "/" component = {About}/>
         <Route path = "/portfolio" component = {Portfolio}/>
