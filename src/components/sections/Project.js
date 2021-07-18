@@ -15,24 +15,24 @@ export default function Project({
 }) {
   return (
     <Stack p={5}>  
-      <Center>
+    <Center>
       <Flex
-        w={16}
-        h={16}
+        w={250}
+        h={250}
         align={'center'}
         alignItems={'center'}
         justify={'center'}
-        rounded={'full'}
-        bg={'#CBC3E3'}
+        
+        // bg={'#CBC3E3'}
         mb={1}>
           
         {icon}
       </Flex>
       </Center>
     
-      <Text textAlign={["center", "center", "left", "left"]} fontWeight={800}>{title}</Text>
+      <Text textAlign={["center", "center", "left", "left"]} fontSize= {["28px", "32px"]} lineHeight= "110%" fontWeight={800}>{title}</Text>
      
-      <Text textAlign={["center", "center", "left", "left"]} color={'gray.600'}>{text}</Text>
+      <Text textAlign={["center", "center", "left", "left"]} fontSize= {["18px", "20px"]} color={'gray.600'}>{text}</Text>
       
       <Link color={'#4a0d99'} textAlign={["center", "center", "left", "left"]} href={link1} mr="5" isExternal>
   Deployed App <ExternalLinkIcon mx="2px" />
