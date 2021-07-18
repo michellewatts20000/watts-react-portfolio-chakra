@@ -1,6 +1,7 @@
 import React from "react";
 import {
-  HashRouter as Router,
+  BrowserRouter,
+  Route,
   Switch
 } from "react-router-dom"
 
@@ -11,13 +12,14 @@ import Resume from "./pages/Resume";
 
 export default function App() {
   return (
-    <Router>
+     <BrowserRouter history={history} basename={process.env.PUBLIC_URL}>
       <Switch>
         <Route exact path = "/" component = {About}/>
         <Route path = "/portfolio" component = {Portfolio}/>
         <Route path = "/contact" component = {Contact}/>
         <Route path = "/resume" component = {Resume}/>
+        
       </Switch>
-    </Router>
+   </BrowserRouter>
   );
 }
