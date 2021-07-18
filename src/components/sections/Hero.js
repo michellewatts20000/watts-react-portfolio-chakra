@@ -46,6 +46,7 @@ export default function Hero({
           as="h1"
           size="3xl"
           fontWeight="bold"
+          
           color={useColorModeValue('primary.800', 'gray.100')}
           textAlign={["center", "center", "left", "left"]}
         >

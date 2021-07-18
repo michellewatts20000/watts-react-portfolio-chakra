@@ -1,6 +1,6 @@
 import React from "react"
 import Navigation from "../sections/Navigation";
-import { Box, Flex, Button, CloseButton } from "@chakra-ui/react"
+import { Box, Flex, Button, CloseButton, useColorModeValue } from "@chakra-ui/react"
 import Logo from "../ui/Logo"
 import { HamburgerIcon } from '@chakra-ui/icons'
  
@@ -19,18 +19,17 @@ const toggleMenu = () => setShow(!show)
       mb={8}
       p={8}
       bg={["primary.500", "primary.500", "transparent", "transparent"]}
-      color={["white", "white", "primary.700", "primary.700"]}
+     
       {...props}
     >
       <Flex align="center">
         <Logo
           w="100px"
-          color={["primary.500", "primary.500"]}
         />
       </Flex>
  
       <Box display={{ base: "block", md: "none" }} onClick={toggleMenu}>
-        {show ? <CloseButton /> : <HamburgerIcon w={6} h={6} />}
+        {show ? <CloseButton  color={["white", "white", "primary.700", "primary.700"]} /> : <HamburgerIcon w={6} h={6}  color={["white", "white", "primary.700", "primary.700"]}/>}
       </Box>
  
       <Box
@@ -42,6 +41,7 @@ const toggleMenu = () => setShow(!show)
           justify={["center", "space-between", "flex-end", "flex-end"]}
           direction={["column", "row", "row", "row"]}
           pt={[4, 4, 0, 0]}
+           color={["white", "white", "primary.700", "primary.700"]}
         >
           <Navigation to="/">About</Navigation>
           <Navigation to="/portfolio">Portfolio </Navigation>
@@ -51,8 +51,9 @@ const toggleMenu = () => setShow(!show)
             <Button
               size="sm"
               rounded="md"
-              color={["primary.500", "primary.500", "white", "white"]}
-              bg={["white", "white", "primary.500", "primary.500"]}
+              colorScheme="primary"
+            color={useColorModeValue('white', 'primary.800')}
+            bg={useColorModeValue('primary.800', 'white')}
               _hover={{
                 bg: [
                   "primary.100",

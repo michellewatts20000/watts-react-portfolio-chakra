@@ -12,20 +12,16 @@ const colors = {
     700: "#310966",
     800: "#25074c",
     900: "#190433"
-  },
-   fonts: {
-    heading: "Open Sans",
-    body: "Raleway",
   }
 };
 
+
 const config = {
-  initialColorMode: "light",
-  useSystemColorMode: false,
+  initialColorMode: "light"
 }
 
 
 
-const customTheme = extendTheme({ colors, config });
+const customTheme = extendTheme({ colors, config});
 
 export default customTheme;
