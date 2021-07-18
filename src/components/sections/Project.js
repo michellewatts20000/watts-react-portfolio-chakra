@@ -34,12 +34,11 @@ export default function Project({
         <Image
             src={icon}
             layout={'fill'}
-            
           />
         </Box>
         <Stack>
           <Text
-            color={'primary.500'}
+            color={['primary.100','primary.100', 'primary.100', 'primary.100' ]}
             textTransform={'uppercase'}
             fontWeight={800}
             fontSize={'sm'}
