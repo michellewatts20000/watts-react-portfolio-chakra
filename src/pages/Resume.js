@@ -72,11 +72,11 @@ ReactJS."
 
   
       </SimpleGrid>
-          
+      < Statistics />    
       </Container>
-     
+      
     </Box>
- < Statistics /> 
+ 
     </MainPage>
   );
 }

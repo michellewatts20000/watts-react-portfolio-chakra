@@ -64,7 +64,7 @@ export default function BasicStatistics() {
       minH="40vh"
       px={8}
       mb={16}
-  
+  mt={{base:"10", md:"5", xl: "0" }}
     >
   
       <SimpleGrid columns={{ base: 1, md: 3 }} spacing={{ base: 5, lg: 8 }}>
