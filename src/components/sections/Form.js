@@ -12,7 +12,7 @@ import React from 'react';
   Textarea
 } from '@chakra-ui/react';
  
- const Basic = () => (
+ const Form = () => (
     <Center>
         <Stack
           bg={'gray.50'}
@@ -29,7 +29,7 @@ import React from 'react';
               <Text
                 as={'span'}
                 bggradient="linear(to-r, red.400,pink.400)"
-                bgClip="text">
+                bgclip="text">
                 !
               </Text>
             </Heading>
@@ -68,7 +68,7 @@ import React from 'react';
          /* and other goodies */
        }) => (
          <form onSubmit={handleSubmit}>
-            <Box as={'form'} >
+            <Box>
             <Stack spacing={4}>
             <Input
                 placeholder="Your name"
@@ -126,4 +126,4 @@ import React from 'react';
   </Center>
  );
  
- export default Basic;
+ export default Form;

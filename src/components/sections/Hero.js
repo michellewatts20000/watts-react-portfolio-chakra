@@ -40,7 +40,7 @@ export default function Hero({
       >
         <Heading
           as="h1"
-          size="xl"
+          size="3xl"
           fontWeight="bold"
           color="primary.800"
           textAlign={["center", "center", "left", "left"]}

@@ -45,7 +45,7 @@ export default function Project({
 }
 
 Project.propTypes = {
-  icon: PropTypes.string,
+  // icon: PropTypes.string,
   title: PropTypes.string,
   text: PropTypes.string,
   link1: PropTypes.string,

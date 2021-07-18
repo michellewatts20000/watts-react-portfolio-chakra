@@ -11,8 +11,15 @@ const colors = {
     700: "#310966",
     800: "#25074c",
     900: "#190433"
+  },
+   fonts: {
+    heading: "Open Sans",
+    body: "Raleway",
   }
 };
+
+
+
 
 const customTheme = extendTheme({ colors });
 
