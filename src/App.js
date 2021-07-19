@@ -12,13 +12,13 @@ import Resume from "./pages/Resume";
 
 export default function App() {
   return (
-     <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Switch>
-        <Route exact path = "/" component = {About}/>
-        <Route path = "/portfolio" component = {Portfolio}/>
-        <Route path = "/contact" component = {Contact}/>
-        <Route path = "/resume" component = {Resume}/>
+        <Route exact path="/" component={About} />
+        <Route path="#/portfolio" component={Portfolio} />
+        <Route path="#/contact" component={Contact} />
+        <Route path="#/resume" component={Resume} />
       </Switch>
-   </BrowserRouter>
+    </BrowserRouter>
   );
 }
