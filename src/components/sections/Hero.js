@@ -27,7 +27,7 @@ export default function Hero({
   return (
     <Flex
       align="center"
-      color={useColorModeValue('gray.800', 'gray.200')}
+      // color={useColorModeValue('gray.800', 'gray.200')}
       justify={{ base: "center", md: "space-around", xl: "space-between" }}
       direction={{ base: "column-reverse", md: "row" }}
       wrap="no-wrap"
@@ -37,7 +37,7 @@ export default function Hero({
       {...rest}
     >
       <Stack
-      
+
         spacing={4}
         w={{ base: "80%", md: "40%" }}
         align={["center", "center", "flex-start", "flex-start"]}
@@ -46,7 +46,8 @@ export default function Hero({
           as="h1"
           size="3xl"
           fontWeight="bold"
-          
+          // bgGradient="linear(to-r, cyan.800, blue.200, purple.700)"
+          // bgClip='text'
           color="primary.500"
           textAlign={["center", "center", "left", "left"]}
         >
@@ -64,41 +65,41 @@ export default function Hero({
           {subtitle}
         </Heading>
         <Center>
-        <Link href={ctaLink} isExternal>
-           <motion.div whileHover={{ scale: 1.1, opacity: 1 }}>
-          <Button
-            colorScheme="primary"
-            borderRadius="8px"
-            py="4"
-            px="4"
-            lineHeight="1"
-            size="md"
-            mr="3"
-          >
-            {ctaText}
-          </Button>
-          </motion.div>
-        </Link>
+          <Link href={ctaLink} isExternal>
+            <motion.div whileHover={{ scale: 1.1, opacity: 1 }}>
+              <Button
+                colorScheme="primary"
+                borderRadius="8px"
+                py="4"
+                px="4"
+                lineHeight="1"
+                size="md"
+                mr="3"
+              >
+                {ctaText}
+              </Button>
+            </motion.div>
+          </Link>
           <Link href={ctaLink2} isExternal>
             <motion.div whileHover={{ scale: 1.1, opacity: 1 }}>
-          <Button
-            colorScheme="primary"
-            borderRadius="8px"
-            py="4"
-            px="4"
-            lineHeight="1"
-            size="md"
-            
-          >
-            {ctaText2}
-          </Button>
-          </motion.div>
-        </Link>
-</Center>
+              <Button
+                colorScheme="primary"
+                borderRadius="8px"
+                py="4"
+                px="4"
+                lineHeight="1"
+                size="md"
+
+              >
+                {ctaText2}
+              </Button>
+            </motion.div>
+          </Link>
+        </Center>
       </Stack>
 
       <Box w={{ base: "70%", sm: "50%", md: "40%" }} mb={{ base: 12, md: 0 }}>
-<motion.div animate={{ x: 100, scale:1.5, rotate:90 }} />
+        <motion.div animate={{ x: 100, scale: 1.5, rotate: 90 }} />
         <Image src={image} size="10%" borderRadius="full" shadow="2xl" />
       </Box>
     </Flex>

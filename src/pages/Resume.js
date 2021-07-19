@@ -22,7 +22,7 @@ export default function Portfolio() {
 
       <Box p={4}>
         <Stack spacing={4} as={Container} maxW={'3xl'} textAlign={'center'}>
-          <Heading fontSize={'3xl'}>Hi! My name is Michelle.</Heading>
+          <Heading color="primary.500" fontSize={'3xl'}>Hi! My name is Michelle.</Heading>
           <Text color={'gray.600'} fontSize={'xl'}>
             I am a Full Stack web developer utilising a background in graphic design to bring creative approaches to problem
             solving and UX.

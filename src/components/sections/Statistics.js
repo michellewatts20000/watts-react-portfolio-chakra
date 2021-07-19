@@ -18,20 +18,20 @@ import {
 } from '@chakra-ui/react';
 import { BsClipboardData } from 'react-icons/bs';
 import { FiServer } from 'react-icons/fi';
-import { GoBook} from 'react-icons/go';
+import { GoBook } from 'react-icons/go';
 import { motion } from "framer-motion"
 
 
-function StatsCard(props){
+function StatsCard(props) {
   const { title, stat, icon } = props;
   return (
-   
+
     <Stat
       px={{ base: 2, md: 4 }}
       py={'5'}
       shadow={'s'}
       border={'1px solid'}
-      borderColor={useColorModeValue('gray.800', 'gray.500')}
+      borderColor="primary.500"
       rounded={'lg'}>
       <Flex justifyContent={'space-between'}>
         <Box pl={{ base: 2, md: 4 }}>
@@ -44,19 +44,19 @@ function StatsCard(props){
         </Box>
         <Box
           my={'auto'}
-          color={useColorModeValue('gray.800', 'gray.200')}
+          color="primary.100"
           alignContent={'center'}>
           {icon}
         </Box>
       </Flex>
     </Stat>
-  
+
   );
 }
 
 export default function BasicStatistics() {
   return (
-          <Flex
+    <Flex
       align="center"
       justify={{ base: "center", md: "space-around", xl: "space-between" }}
       direction={{ base: "column-reverse", md: "row" }}
@@ -64,9 +64,9 @@ export default function BasicStatistics() {
       minH="40vh"
       px={8}
       mb={16}
-  mt={{base:"10", md:"5", xl: "0" }}
+      mt={{ base: "10", md: "5", xl: "0" }}
     >
-  
+
       <SimpleGrid columns={{ base: 1, md: 3 }} spacing={{ base: 5, lg: 8 }}>
         <StatsCard
           title={'Languages'}
@@ -83,10 +83,10 @@ export default function BasicStatistics() {
           stat={'Chakra, Express, React, Node.js, Handlebars, JQuery, Bootstrap'}
           icon={<GoBook size={'3em'} />}
         />
-       
+
       </SimpleGrid>
-       
-    
-     </Flex>
+
+
+    </Flex>
   );
 }
