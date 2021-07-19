@@ -6,7 +6,7 @@ import { Text } from "@chakra-ui/react"
 const Navigation = (props) => {
   const { children, isLast, to = "/", ...rest } = props
   var pathArray = window.location.pathname.split('/');
-  var newPath = "/" + pathArray[3];
+  var newPath = "/" + pathArray[2];
   return (
     <Text
       mb={{ base: isLast ? 0 : 8, sm: 0 }}
@@ -15,8 +15,9 @@ const Navigation = (props) => {
       as={newPath === to ? 'u' : ''}
       {...rest}
     >
-      {console.log(newPath)}
-      {console.log(window.location.pathname)}
+      {console.log("newPath", newPath)}
+      {console.log("to", to)}
+      {console.log("window.location.pathname", window.location.pathname)}
       <Link to={to}>{children}</Link>
     </Text>
   )
