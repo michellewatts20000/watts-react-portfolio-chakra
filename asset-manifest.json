@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/watts-react-portfolio-chakra/static/js/main.3bd7abbc.chunk.js",
-    "main.js.map": "/watts-react-portfolio-chakra/static/js/main.3bd7abbc.chunk.js.map",
+    "main.js": "/watts-react-portfolio-chakra/static/js/main.7a8943e9.chunk.js",
+    "main.js.map": "/watts-react-portfolio-chakra/static/js/main.7a8943e9.chunk.js.map",
     "runtime-main.js": "/watts-react-portfolio-chakra/static/js/runtime-main.b87946e0.js",
     "runtime-main.js.map": "/watts-react-portfolio-chakra/static/js/runtime-main.b87946e0.js.map",
     "static/js/2.262472dc.chunk.js": "/watts-react-portfolio-chakra/static/js/2.262472dc.chunk.js",
@@ -12,6 +12,6 @@
   "entrypoints": [
     "static/js/runtime-main.b87946e0.js",
     "static/js/2.262472dc.chunk.js",
-    "static/js/main.3bd7abbc.chunk.js"
+    "static/js/main.7a8943e9.chunk.js"
   ]
 }
