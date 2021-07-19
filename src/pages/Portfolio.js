@@ -7,8 +7,8 @@ import MainPage from "../components/layouts/MainPage";
 export default function Portfolio() {
   return (
     <MainPage>
-      <Box>
-        <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} spacing={10} mb="5">
+      <Box mb="10">
+        <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} spacing={10} >
 
           <Project
             icon={"./img/calculator.png"}

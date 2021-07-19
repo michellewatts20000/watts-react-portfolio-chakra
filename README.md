@@ -2,7 +2,7 @@
 # Michelle Watts' React Portfolio
 
 ## Links
-### Link to my react portfolio is [here](https://michellewatts20000.github.io/watts-react-portfolio-chakra/)
+### Link to my react portfolio is [here](https://michellewatts20000.github.io/watts-react-portfolio-chakra/#/watts-react-portfolio-chakra/)
 ### Link to its GitHub repo lives [here](https://github.com/michellewatts20000/watts-react-portfolio-chakra)
 
 ## Technologies used
