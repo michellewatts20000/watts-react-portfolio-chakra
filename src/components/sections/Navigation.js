@@ -2,11 +2,11 @@ import React from "react"
 import { Link } from "react-router-dom"
 import { Text } from "@chakra-ui/react"
 
- 
+
 const Navigation = (props) => {
   const { children, isLast, to = "/", ...rest } = props
- var pathArray = window.location.pathname.split('/');
-var newPath = "/" + pathArray[2];
+  var pathArray = window.location.pathname.split('/');
+  var newPath = "/" + pathArray[4];
   return (
     <Text
       mb={{ base: isLast ? 0 : 8, sm: 0 }}
@@ -16,11 +16,12 @@ var newPath = "/" + pathArray[2];
       {...rest}
     >
       {console.log(newPath)}
+      {console.log(window.location.pathname)}
       <Link to={to}>{children}</Link>
     </Text>
   )
 }
- 
 
- 
+
+
 export default Navigation
