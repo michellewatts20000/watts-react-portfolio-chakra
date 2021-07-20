@@ -38,7 +38,7 @@ import React from 'react';
             </Text>
           </Stack>
      <Formik
-       initialValues={{ email: '', password: '' }}
+       initialValues={{ email: ''}}
        validate={values => {
          const errors = {};
          if (!values.email) {

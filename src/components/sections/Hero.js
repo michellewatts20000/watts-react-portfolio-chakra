@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 // import { mode } from '@chakra-ui/theme-tools';
+import Typewriter from 'typewriter-effect';
 import {
   Box,
   Button,
@@ -32,27 +33,27 @@ export default function Hero({
       direction={{ base: "column-reverse", md: "row" }}
       wrap="no-wrap"
       minH="65vh"
-      px={8}
+      px={6}
       mb={16}
       {...rest}
     >
       <Stack
-
         spacing={4}
-        w={{ base: "80%", md: "40%" }}
+        w={{ base: "80%", md: "55%" }}
         align={["center", "center", "flex-start", "flex-start"]}
       >
         <Heading
           as="h1"
-          size="3xl"
+          size={"3xl"}
           fontWeight="bold"
-          // bgGradient="linear(to-r, cyan.800, blue.200, purple.700)"
-          // bgClip='text'
+    
           color="primary.500"
           textAlign={["center", "center", "left", "left"]}
         >
           {title}
+           <Typewriter  options={{strings: ['Web Developer', 'Designer', 'Drummer'],autoStart: true, loop: true,}}/>
         </Heading>
+       
         <Heading
           as="h2"
           size="md"
@@ -84,6 +85,7 @@ export default function Hero({
             <motion.div whileHover={{ scale: 1.1, opacity: 1 }}>
               <Button
                 colorScheme="primary"
+                
                 borderRadius="8px"
                 py="4"
                 px="4"

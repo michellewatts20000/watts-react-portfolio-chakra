@@ -2,7 +2,12 @@ import React from "react";
 import { Box, SimpleGrid } from '@chakra-ui/react';
 import Project from "../components/sections/Project";
 import MainPage from "../components/layouts/MainPage";
-
+import calculator from "../components/images/calculator.png";
+import pantry from "../components/images/pantry.png";
+import blogger from "../components/images/blogger.png";
+import note from "../components/images/note.png";
+import weather from "../components/images/weather.png";
+import code from "../components/images/code-img-land.png";
 
 export default function Portfolio() {
   return (
@@ -11,7 +16,7 @@ export default function Portfolio() {
         <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} spacing={10} >
 
           <Project
-            icon={"./img/calculator.png"}
+            icon={calculator}
             title={'Unpaid overtime calculator'}
             tech={"node.JS, MySQL"}
             text={
@@ -21,7 +26,7 @@ export default function Portfolio() {
             link2={"https://github.com/michellewatts20000/unpaid-overtime-calc"}
           />
           <Project
-            icon={"./img/pantry.png"}
+            icon={pantry}
             title={"What's in my pantry?"}
             tech={"HTML, CSS, JS, Bootstrap"}
             text={
@@ -31,7 +36,7 @@ export default function Portfolio() {
             link2={"https://github.com/michellewatts20000/whats-in-my-pantry"}
           />
           <Project
-            icon={"./img/blogger.png"}
+            icon={blogger}
             title={'Tech Blog'}
             tech={"node.JS, MySQL"}
             text={
@@ -41,7 +46,7 @@ export default function Portfolio() {
             link2={"https://github.com/michellewatts20000/tech-blog"}
           />
           <Project
-            icon={"./img/note.png"}
+            icon={note}
             title={'Note Taker'}
             tech={"node.JS, HTML, CSS"}
             text={
@@ -51,7 +56,7 @@ export default function Portfolio() {
             link2={"https://github.com/michellewatts20000/note-taker"}
           />
           <Project
-            icon={"./img/weather.png"}
+            icon={weather}
             title={'Weather dashboard'}
             tech={"API, JS, HTML, CSS"}
             text={
@@ -62,7 +67,7 @@ export default function Portfolio() {
             link2={"https://github.com/michellewatts20000/weather-dashboard"}
           />
           <Project
-            icon={"./img/code-img-land.png"}
+            icon={code}
             title={'Code quiz'}
             tech={"JS, HTML, CSS"}
             text={

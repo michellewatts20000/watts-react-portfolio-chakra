@@ -1,17 +1,24 @@
 {
   "files": {
-    "main.js": "/watts-react-portfolio-chakra/static/js/main.ef5cd4ac.chunk.js",
-    "main.js.map": "/watts-react-portfolio-chakra/static/js/main.ef5cd4ac.chunk.js.map",
+    "main.js": "/watts-react-portfolio-chakra/static/js/main.f112ee1b.chunk.js",
+    "main.js.map": "/watts-react-portfolio-chakra/static/js/main.f112ee1b.chunk.js.map",
     "runtime-main.js": "/watts-react-portfolio-chakra/static/js/runtime-main.b87946e0.js",
     "runtime-main.js.map": "/watts-react-portfolio-chakra/static/js/runtime-main.b87946e0.js.map",
-    "static/js/2.bfef645c.chunk.js": "/watts-react-portfolio-chakra/static/js/2.bfef645c.chunk.js",
-    "static/js/2.bfef645c.chunk.js.map": "/watts-react-portfolio-chakra/static/js/2.bfef645c.chunk.js.map",
+    "static/js/2.6509c19b.chunk.js": "/watts-react-portfolio-chakra/static/js/2.6509c19b.chunk.js",
+    "static/js/2.6509c19b.chunk.js.map": "/watts-react-portfolio-chakra/static/js/2.6509c19b.chunk.js.map",
     "index.html": "/watts-react-portfolio-chakra/index.html",
-    "static/js/2.bfef645c.chunk.js.LICENSE.txt": "/watts-react-portfolio-chakra/static/js/2.bfef645c.chunk.js.LICENSE.txt"
+    "static/js/2.6509c19b.chunk.js.LICENSE.txt": "/watts-react-portfolio-chakra/static/js/2.6509c19b.chunk.js.LICENSE.txt",
+    "static/media/blogger.600da017.png": "/watts-react-portfolio-chakra/static/media/blogger.600da017.png",
+    "static/media/calculator.f020aa1d.png": "/watts-react-portfolio-chakra/static/media/calculator.f020aa1d.png",
+    "static/media/code-img-land.fa207d68.png": "/watts-react-portfolio-chakra/static/media/code-img-land.fa207d68.png",
+    "static/media/my-face.5dc95b24.jpeg": "/watts-react-portfolio-chakra/static/media/my-face.5dc95b24.jpeg",
+    "static/media/note.5c7d78eb.png": "/watts-react-portfolio-chakra/static/media/note.5c7d78eb.png",
+    "static/media/pantry.970aba9d.png": "/watts-react-portfolio-chakra/static/media/pantry.970aba9d.png",
+    "static/media/weather.43923c93.png": "/watts-react-portfolio-chakra/static/media/weather.43923c93.png"
   },
   "entrypoints": [
     "static/js/runtime-main.b87946e0.js",
-    "static/js/2.bfef645c.chunk.js",
-    "static/js/main.ef5cd4ac.chunk.js"
+    "static/js/2.6509c19b.chunk.js",
+    "static/js/main.f112ee1b.chunk.js"
   ]
 }
