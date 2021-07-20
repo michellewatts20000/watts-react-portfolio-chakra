@@ -38,6 +38,7 @@ const styleError = {
    <Center>
         <Stack
           bg={'gray.50'}
+          mb={10}
           rounded={'xl'}
           p={{ base: 4, sm: 6, md: 8 }}
           spacing={{ base: 8 }}
@@ -88,7 +89,7 @@ const styleError = {
                 _placeholder={{
                   color: 'gray.500',
                 }}
-              type="text"
+           
             
             />
           )}
@@ -107,9 +108,7 @@ const styleError = {
                 color={'gray.900'}
                 _placeholder={{
                   color: 'gray.500',
-                }}
-              type="email"
-            
+                }}            
             />
           )}
         </Field>
@@ -122,7 +121,7 @@ const styleError = {
           {({ field, form }) => (
             <Textarea
              placeholder="Your message"
-              style={form.touched.username && form.errors.username ? styleError : style}
+              style={form.touched.message && form.errors.message ? styleError : style}
               {...field}
                 bg={'gray.100'}
                 border={0}
@@ -131,8 +130,6 @@ const styleError = {
                 _placeholder={{
                   color: 'gray.500',
                 }}
-             
-            
             />
           )}
         </Field>
