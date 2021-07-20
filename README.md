@@ -12,7 +12,7 @@ React JS, Chakra
 Shows all the projects I have worked on over the last few months. Built using React JS and Chakra UI.
 
 ## Demo of portfolio
-![gif of portfolio](./public/img/my-react-portfolio.gif)
+![gif of portfolio](./public/img/my-react-portfolio-2.gif)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 

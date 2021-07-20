@@ -89,8 +89,6 @@ const styleError = {
                 _placeholder={{
                   color: 'gray.500',
                 }}
-           
-            
             />
           )}
         </Field>
@@ -101,7 +99,7 @@ const styleError = {
           {({ field, form }) => (
             <Input
              placeholder="your@email.com"
-              style={form.touched.username && form.errors.username ? styleError : style}
+              style={form.touched.email && form.errors.email ? styleError : style}
               {...field}
                 bg={'gray.100'}
                 border={0}
