@@ -1,6 +1,6 @@
 import React from "react"
 import Navigation from "../sections/Navigation";
-import { Box, Flex, Button, CloseButton} from "@chakra-ui/react"
+import { Box, Flex, Button, CloseButton, Link} from "@chakra-ui/react"
 import Logo from "../ui/Logo"
 import { HamburgerIcon } from '@chakra-ui/icons'
  
@@ -47,7 +47,7 @@ const toggleMenu = () => setShow(!show)
           <Navigation to="/portfolio">Portfolio </Navigation>
           <Navigation to="/resume">Resume </Navigation>
          
-          <Navigation to="/contact" isLast>
+          <Link isExternal href="mailto:watts.e.michelle@gmail.com" isLast>
             <Button
             colorScheme="primary"
             borderRadius="8px"
@@ -58,7 +58,7 @@ const toggleMenu = () => setShow(!show)
             >
               Contact
             </Button>
-          </Navigation>
+          </Link>
         </Flex>
       </Box>
     </Flex>

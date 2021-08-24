@@ -16,12 +16,12 @@ const colors = {
 };
 
 
-const config = {
-  initialColorMode: "dark"
-}
+// const config = {
+//   initialColorMode: "dark"
+// }
 
 
 
-const customTheme = extendTheme({ colors, config});
+const customTheme = extendTheme({ colors});
 
 export default customTheme;
